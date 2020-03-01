@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Lab_1
 {
-    public class List<T> : IEnumerable
+    public class List<T> : IEnumerable<T>
     {
         private ListItem
             _root = null,  // First item
@@ -21,7 +21,7 @@ namespace Lab_1
             if (enumerable != null)
                 Add(enumerable);
         }
-
+        
         ~List()
         {
             while (_root++ != null)
@@ -189,14 +189,17 @@ namespace Lab_1
             return index > -1 && index < Length;
         }
 
-        public IEnumerator GetEnumerator()
+        public IEnumerator<T> GetEnumerator()
         {
             // 'yield return' allows us to create a generator in-place,
             // without the need to create a separate Enumerator class manually
             for (var curr = _root; curr != null; curr++)
-            {
                 yield return curr.Value;
-            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
 
         public override string ToString()
