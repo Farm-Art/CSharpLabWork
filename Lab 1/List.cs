@@ -127,6 +127,14 @@ namespace Lab_1
                 func(item);
         }
 
+        public void Iter(Func<T, T> func)
+        {
+            for (int i = 0; i < Length; i++)
+            {
+                this[i] = func(this[i]);
+            }
+        }
+
         public T this[int index]
         {
             get => GetItem(index).Value;
