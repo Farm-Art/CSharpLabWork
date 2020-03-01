@@ -1,0 +1,11 @@
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 1\bin\Debug\netcoreapp3.1\Lab 1.exe
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 1\bin\Debug\netcoreapp3.1\Lab 1.deps.json
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 1\bin\Debug\netcoreapp3.1\Lab 1.runtimeconfig.json
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 1\bin\Debug\netcoreapp3.1\Lab 1.runtimeconfig.dev.json
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 1\bin\Debug\netcoreapp3.1\Lab 1.dll
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 1\bin\Debug\netcoreapp3.1\Lab 1.pdb
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.csprojAssemblyReference.cache
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.AssemblyInfoInputs.cache
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.AssemblyInfo.cs
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.dll
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.pdb
