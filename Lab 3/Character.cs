@@ -11,6 +11,8 @@ namespace Lab_3
 
         public int Health => _health;
         public int HitPower => _hitpower;
+        // Having a damage property allows easier alteration in subclasses
+        // (see Knight.cs for an example)
         public int Damage => _hitpower;
         public bool IsAlive => Health > 0;
 
@@ -33,7 +35,7 @@ namespace Lab_3
             }
             else
                 roll = _rand.Next(0, 10);
-
+            
             if (roll >= _hitThreshold)
                 other.TakeDamage(this, (int)(Damage * multiplier));
             

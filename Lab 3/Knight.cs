@@ -4,6 +4,7 @@ namespace Lab_3
     {
         protected int _strength;
         public int Strength => _strength;
+        // Overload damage property to accout for strength
         public new int Damage => _hitpower * (int)(_strength / 10.0);
         
         public Knight(int strength) : base(150, 20, 3)

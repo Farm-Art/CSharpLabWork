@@ -40,19 +40,21 @@ namespace Lab_3
                 }
 
             if (hasArmy) return;
+            // If the army is dead, the king fights himself
             base.Fight(other, initiative);
             _army = Array.Empty<Character>();
         }
 
         public override void TakeDamage(Character offender, int damage)
         {
+            // The army tries to defend the king
             foreach (Character chr in _army)
                 if (chr.IsAlive)
                 {
                     chr.TakeDamage(offender, damage);
                     return;
                 }
-
+            // If the army is dead, the king takes damage
             base.TakeDamage(offender, damage);
         }
 
