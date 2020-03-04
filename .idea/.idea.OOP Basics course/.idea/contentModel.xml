@@ -48,6 +48,20 @@
         </e>
         <e p="Program.cs" t="Include" />
       </e>
+      <e p="Lab 4" t="IncludeRecursive">
+        <e p="AbstractMatrix.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Lab 4.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Lab 4.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="SquareMatrix.cs" t="Include" />
+      </e>
       <e p="OOP Basics course.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
