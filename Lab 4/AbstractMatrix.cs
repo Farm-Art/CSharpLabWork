@@ -25,7 +25,7 @@ namespace Lab_4
                 Console.Write("{");
                 for (int j = 0; j < Cols; j++)
                 {
-                    Console.Write(this[i, j] + (j < Cols - 1 ? "; " : ""));
+                    Console.Write(this[i, j].ToString().PadLeft(7) + (j < Cols - 1 ? "; " : ""));
                 }
                 Console.WriteLine("}");
             }

@@ -9,3 +9,14 @@ C:\Users\farma\RiderProjects\CSharpLabWork\Lab 4\obj\Debug\netcoreapp3.1\Lab 4.A
 C:\Users\farma\RiderProjects\CSharpLabWork\Lab 4\obj\Debug\netcoreapp3.1\Lab 4.AssemblyInfo.cs
 C:\Users\farma\RiderProjects\CSharpLabWork\Lab 4\obj\Debug\netcoreapp3.1\Lab 4.dll
 C:\Users\farma\RiderProjects\CSharpLabWork\Lab 4\obj\Debug\netcoreapp3.1\Lab 4.pdb
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 4\bin\Debug\netcoreapp3.1\Lab 4.exe
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 4\bin\Debug\netcoreapp3.1\Lab 4.deps.json
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 4\bin\Debug\netcoreapp3.1\Lab 4.runtimeconfig.json
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 4\bin\Debug\netcoreapp3.1\Lab 4.runtimeconfig.dev.json
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 4\bin\Debug\netcoreapp3.1\Lab 4.dll
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 4\bin\Debug\netcoreapp3.1\Lab 4.pdb
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 4\obj\Debug\netcoreapp3.1\Lab 4.csprojAssemblyReference.cache
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 4\obj\Debug\netcoreapp3.1\Lab 4.AssemblyInfoInputs.cache
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 4\obj\Debug\netcoreapp3.1\Lab 4.AssemblyInfo.cs
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 4\obj\Debug\netcoreapp3.1\Lab 4.dll
+C:\Users\FarmArt.DESKTOP\RiderProjects\OOP Basics course\Lab 4\obj\Debug\netcoreapp3.1\Lab 4.pdb

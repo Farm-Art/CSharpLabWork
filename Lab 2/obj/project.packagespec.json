@@ -1,11 +1,14 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\farma\\RiderProjects\\CSharpLabWork\\Lab 2\\Lab 2.csproj",
+    "projectUniqueName": "C:\\Users\\FarmArt.DESKTOP\\RiderProjects\\OOP Basics course\\Lab 2\\Lab 2.csproj",
     "projectName": "Lab 2",
-    "projectPath": "C:\\Users\\farma\\RiderProjects\\CSharpLabWork\\Lab 2\\Lab 2.csproj",
-    "outputPath": "C:\\Users\\farma\\RiderProjects\\CSharpLabWork\\Lab 2\\obj\\",
+    "projectPath": "C:\\Users\\FarmArt.DESKTOP\\RiderProjects\\OOP Basics course\\Lab 2\\Lab 2.csproj",
+    "outputPath": "C:\\Users\\FarmArt.DESKTOP\\RiderProjects\\OOP Basics course\\Lab 2\\obj\\",
     "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
     "originalTargetFrameworks": [
       "netcoreapp3.1"
     ],
@@ -41,7 +44,7 @@
           "privateAssets": "all"
         }
       },
-      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
     }
   }
 }
