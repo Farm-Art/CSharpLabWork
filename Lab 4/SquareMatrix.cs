@@ -44,7 +44,7 @@ namespace Lab_4
         public static void PrintArr()
         {
             foreach (var mat in _matrices)
-                mat.Print();
+                mat?.Print();
         }
 
         private int _size = 0;
