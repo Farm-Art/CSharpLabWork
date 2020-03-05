@@ -52,6 +52,7 @@
         <e p="AbstractMatrix.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Lab 4.csproj" t="IncludeRecursive" />
+        <e p="Menu.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">

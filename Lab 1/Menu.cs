@@ -22,7 +22,7 @@ namespace Lab_1
             {
                 [ComputerTable.Key.Model] =
                     (a, b) => String.CompareOrdinal(a.Model, b.Model),
-                [ComputerTable.Key.HasPrinter] =
+                [ComputerTable.Key.Printer] =
                     (a, b) => (a.HasPrinter != b.HasPrinter ? (!a.HasPrinter ? 1 : -1) : 0),
                 [ComputerTable.Key.Price] =
                     (a, b) => (int) (a.Price - b.Price),
@@ -36,7 +36,7 @@ namespace Lab_1
             {
                 [ComputerTable.Key.Model] =
                     (t) => PrintIfTrue(t.Model == _modelSample, t),
-                [ComputerTable.Key.HasPrinter] =
+                [ComputerTable.Key.Printer] =
                     (t) => PrintIfTrue(t.HasPrinter == _printerSample, t),
                 [ComputerTable.Key.Price] =
                     (t) => PrintIfTrue(t.Price == _priceSample, t),
@@ -104,7 +104,7 @@ namespace Lab_1
         public static void SortList(List<ComputerTable> list)
         {
             Console.WriteLine("What criteria would you like to sort the list by?");
-            Console.WriteLine("Choose one of the following: model, printer, price, material.");
+            Console.WriteLine("Choose one of the following: model (0), printer (1), price (2), material (3).");
             ComputerTable.Key key = GetKey();
             
             bool reverse;
@@ -119,7 +119,7 @@ namespace Lab_1
         {
             _matched = false;
             Console.WriteLine("What field would you like to search the list by?");
-            Console.WriteLine("Choose one of the following: model, printer, price, material.");
+            Console.WriteLine("Choose one of the following: model (0), printer (1), price (2), material (3).");
             ComputerTable.Key key = GetKey();
 
             Console.WriteLine("Enter search data:");
@@ -129,7 +129,7 @@ namespace Lab_1
                 case ComputerTable.Key.Model :
                     _modelSample = Console.ReadLine();
                     break;
-                case ComputerTable.Key.HasPrinter :
+                case ComputerTable.Key.Printer :
                     while (!Boolean.TryParse(Console.ReadLine(), out _printerSample))
                         Console.WriteLine("Failed to read input, try again.");
                     break;
@@ -164,21 +164,12 @@ namespace Lab_1
 
         private static ComputerTable.Key GetKey()
         {
-            while (true)
-                switch (Console.ReadLine())
-                {
-                    case "model" :
-                        return ComputerTable.Key.Model;
-                    case "printer" :
-                        return ComputerTable.Key.HasPrinter;
-                    case "price" :
-                        return ComputerTable.Key.Price;
-                    case "material" :
-                        return ComputerTable.Key.Material;
-                    default:
-                        Console.WriteLine("That's not a correct criterion. Try again.");
-                        break;
-                }
+            ComputerTable.Key input;
+            while (!Enum.TryParse(Console.ReadLine(), true, out input))
+            {
+                Console.WriteLine("That's not a correct key.");
+            }
+            return input;
         }
         
         public static Item GetInput()

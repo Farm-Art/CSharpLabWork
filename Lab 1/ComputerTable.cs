@@ -6,7 +6,7 @@ namespace Lab_1
     {
         public enum Key
         {
-            Model, HasPrinter, Price, Material
+            Model, Printer, Price, Material
         }
         public string Model { get; set; }
         public bool HasPrinter { get; set; }
