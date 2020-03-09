@@ -12,16 +12,9 @@ namespace Lab_1
             _lastItem = null;  // Last indexed item
         private int _lastIndex = 0;  // Last requested index
         
-        private int _length = 0;
-        public int Length => _length;
+        public int Length { get; private set; }
         public bool IsEmpty => Length == 0;
-        
-        public List(IEnumerable<T> enumerable = null)
-        {
-            if (enumerable != null)
-                Add(enumerable);
-        }
-        
+
         ~List()
         {
             while (_root++ != null)
@@ -37,39 +30,7 @@ namespace Lab_1
             else
                 _tail.InsertAfter(item);
             _tail = item;
-            _length++;
-        }
-
-        // Overload equivalent to AddRange
-        public void Add(IEnumerable<T> enumerable)
-        {
-            foreach (T item in enumerable)
-                Add(item);
-        }
-
-        // Insert value into any position
-        public void Insert(int index, T value)
-        {
-            GetItem(index).InsertBefore(new ListItem(value));
-            if (index == 0)
-                _root--;
-            _lastIndex++;  // Update index to match new position
-            _length++;
-        }
-
-        // Overload equivalent to InsertRange
-        public void Insert(int index, IEnumerable<T> enumerable)
-        {
-            ListItem start = GetItem(index);
-            foreach (T value in enumerable)
-            {
-                // Keep pushing in front of start, that way the order is preserved
-                start.InsertBefore(new ListItem(value));
-                _lastIndex++;  // Update index to match new position
-                _length++;
-                if (index == 0)
-                    _root--;
-            }
+            Length++;
         }
         
         public void Remove() => Remove(Length - 1);
@@ -91,7 +52,7 @@ namespace Lab_1
                     // _root = _root.Next;
                     _root++;
             }
-            _length--;
+            Length--;
         }
 
         public void Sort(Comparison<T> cond, bool reverse = false)
@@ -130,9 +91,7 @@ namespace Lab_1
         public void Iter(Func<T, T> func)
         {
             for (int i = 0; i < Length; i++)
-            {
                 this[i] = func(this[i]);
-            }
         }
 
         public T this[int index]
