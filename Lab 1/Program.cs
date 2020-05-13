@@ -2,9 +2,9 @@
 
 namespace Lab_1
 {
-    static class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Menu.PrintMenu();
             Menu.Run();

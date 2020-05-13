@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Lab_4
 {
-    public class Menu
+    public static class Menu
     {
         public enum Item
         {
